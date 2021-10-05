@@ -1,0 +1,27 @@
+Requirements:
+1. Upload functionality - Photos, text associated - description
+2. Tagging - hashtags - to allow searching photos
+    * All photos are posted publicly, but can search via Hash-tag
+
+Client <-> Load Balancer <-> Server <-> Database data on photos -> Storage
+
+Replicate storage for resilience
+
+
+Separate servers for upload and download
+
+
+Client - display the images,
+        Upload images, with a description
+        Add hashtags to images
+
+CRUD:
+
+Database users, photos
+users: id
+photos: [photos]
+
+photos: id
+url: storage
+hashtags: [string]
+description: string
